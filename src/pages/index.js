@@ -1,5 +1,5 @@
 import { Container, Row, Col, Image, Stack } from "react-bootstrap";
-import MyNavbar from "../components/my-navbar";
+import MyNavbar from "components/my-navbar";
 
 export default function Home() {
   return (
