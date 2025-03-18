@@ -1,29 +1,50 @@
-import { Container, Row, Col, Navbar, Nav, Media, Image, Card } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
-const AdminIntro = () => (
-  <Media className="mb-4 admin-intro">
-    <Image
-      roundedCircle
-      width={64}
-      height={64}
-      className="mr-3"
-      src="logo.jpg"
-      alt="Generic placeholder"
-    />
-    <Media.Body>
-      <h5 className="font-weight-bold mb-0">1234.mn - Онлайн видео сургалт</h5>
-      <p className="welcome-text">
-        Бид програмчлалын технологийн чиглэлээр төрөл бүрийн сонирхолтой
-        мэдээллүүдийг энэхүү блогоор хүргэж байна.
-      </p>
-    </Media.Body>
-  </Media>
-);
-
-export default function Intro() {
+const Footer = () => {
   return (
-    <div>
-      <h1>Welcome to 1234.mn Blog!</h1>
-    </div>
+    <footer className="footer mt-5 py-3 bg-dark text-white">
+      <Container>
+        <Row>
+          <Col md={6}>
+            <h5>1234.mn - Онлайн Видео Сургалт</h5>
+            <p>
+              Програмчлалын технологийн чиглэлээр төрөл бүрийн сонирхолтой
+              мэдээллүүдийг хүргэж байна.
+            </p>
+          </Col>
+          <Col md={3}>
+            <h6>Холбоо барих</h6>
+            <p>Email: info@1234.mn</p>
+            <p>Phone: +976 1234-5678</p>
+          </Col>
+          <Col md={3}>
+            <h6>Биднийг дагаарай</h6>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white me-3"
+            >
+              Facebook
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white"
+            >
+              Twitter
+            </a>
+          </Col>
+        </Row>
+        <hr className="mt-3 border-light" />
+        <p className="text-center">
+          &copy; {new Date().getFullYear()} 1234.mn. Бүх эрх хуулиар
+          хамгаалагдсан.
+        </p>
+      </Container>
+    </footer>
   );
-}
+};
+
+export default Footer;

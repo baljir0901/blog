@@ -1,24 +1,27 @@
-import { Stack, Image } from "react-bootstrap";
+import { Card, Image } from "react-bootstrap";
 
-const AdminIntro = () => {
-  return (
-    <Stack direction="horizontal" gap={3} className="mb-4 admin-intro">
+const AdminIntro = () => (
+  <Card className="mb-4 admin-intro">
+    <Card.Body className="d-flex">
       <Image
         roundedCircle
         width={64}
         height={64}
-        src="/logo.jpg"
-        alt="Admin Image"
+        className="mr-3"
+        src="logo.jpg"
+        alt="Generic placeholder"
       />
       <div>
-        <h5 className="fw-bold mb-0">1234.mn - Онлайн видео сургалт</h5>
+        <h5 className="font-weight-bold mb-0">
+          1234.mn - Онлайн видео сургалт
+        </h5>
         <p className="welcome-text">
           Бид програмчлалын технологийн чиглэлээр төрөл бүрийн сонирхолтой
           мэдээллүүдийг энэхүү блогоор хүргэж байна.
         </p>
       </div>
-    </Stack>
-  );
-};
+    </Card.Body>
+  </Card>
+);
 
 export default AdminIntro;

@@ -297,12 +297,18 @@ body {
   }
 }
 
-.page-footer {
-  padding: 40px;
-  font-size: 20px;
-  text-align: center;
+.footer {
+  background: #222;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 14px;
+}
 
-  a {
-    color: #63696e;
-  }
+.footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
 }
