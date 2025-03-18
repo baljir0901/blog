@@ -1,5 +1,6 @@
 import { Container, Row, Col, Image, Stack } from "react-bootstrap";
-import MyNavbar from "components/my-navbar";
+import MyNavbar from "@/components/my-navbar";
+import Intro from "@/components/intro";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <div className="blog-detail-page">
         <Row>
           <Col md="8">
+            <Intro />
             <Stack direction="horizontal" gap={3} className="mb-4 admin-intro">
               <Image
                 roundedCircles
